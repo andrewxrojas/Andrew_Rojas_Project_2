@@ -1,0 +1,66 @@
+* {
+    margin-top: 5%;
+    padding: 0;
+    max-height: 50vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  a:link{
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  a:visited{
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: rgb(255, 168, 222);
+  }
+
+  a:active{
+    text-decoration: none;
+  }
+
+  body {
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: #333333;
+    font-family: "pf-marlet-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .heading{
+    font-size: 55px;
+    word-spacing: 5px;
+  }
+  
+  .parentThree{
+    display: flex; 
+    flex-direction: column;
+    text-align: left;
+    padding-left: 30%;
+    padding-right: 30%;    
+  }
+
+  .lyricsSix{
+    display:inline;
+    word-spacing: 5px;
+  }
+
+  .home{
+    word-spacing: 5px;
+    text-align: center;
+    margin-top: 25%;
+  }
