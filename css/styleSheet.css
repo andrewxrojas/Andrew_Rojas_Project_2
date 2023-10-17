@@ -1,5 +1,5 @@
 * {
-    margin-top: 5%;
+    margin-top: 10%;
     padding: 0;
     max-height: 100vh;
     width: 130%;
@@ -8,7 +8,16 @@
 
   a{
     text-decoration: none;
-    color: white;
+    font-family: "timberline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    animation-name: sorrow;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: none;
+    animation-timing-function: ease-in-out;
   }
 
   a:link{
@@ -19,9 +28,6 @@
     text-decoration: none;
   }
 
-  a:hover{
-    color: rgb(255, 168, 222);
-  }
 
   a:active{
     text-decoration: none;
@@ -32,32 +38,93 @@
     width: 100%;
     color: white;
     background-color: #333333;
-    font-family: "timberline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 100px;
-    text-align: center;
-    position: relative;
+    font-size: 80px;
+    /* border: solid 1px red; */
+
   }
   
   .parent{
-    display: flex; 
+    display: inline; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    /* border: solid 1px orange; */
+    margin-left: 15%;
+    margin-right: 10%;
+
     
   }
 
-
-  .lyrics{
-    /* background-color: red; */
+  .we1, .we2, .pain, .lyrics, .lyricsOne{
     display: inline;
+    font-family: "baskerville-urw", serif;
+    font-weight: 400;
+    font-style: normal;
     word-spacing: 20px;
+  
+  }
+
+  .we1, .we2{
+    transition-duration: 8s;
+    font-size: 120px;
+    animation-name: we;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: 1; */
+    /* animation-timing-function: ease-; */
+
+    /* color: #57b6ff; */
 
   }
 
-  .lyricsOne{
-    /* background-color: red; */
-    display: inline;
-    word-spacing: 20px;
+  .we1, .w2:hover{
+    transform: scale(1);
   }
+
+
+
+   .pain{
+    animation-name: painRed;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: 1; */
+    animation-timing-function: ease-in-out;
+
+
+  } 
+
+  @keyframes we {
+    from {
+      color: white;
+    }
+    to {
+      color: #026aa6;
+    }
+
+
+  }
+
+
+  @keyframes painRed {
+    from {
+      color: white;
+    }
+    to {
+      color: rgb(218, 6, 6);
+    }
+  }
+
+  @keyframes sorrow {
+    from {
+      color: white;
+    }
+    to {
+      color: rgb(255, 168, 222);
+    }
+  }
+ 
+  

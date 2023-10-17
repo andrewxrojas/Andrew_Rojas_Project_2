@@ -8,6 +8,9 @@
 
 a{
   text-decoration: none;
+  font-family: "timberline", sans-serif;
+  font-weight: 400;
+  font-style: normal;  
   color: white;
 }
 
@@ -32,32 +35,27 @@ body {
   width: 100%;
   color: white;
   background-color: #333333;
-  font-family: "timberline", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100px;
-  text-align: center;
-  position: relative;
+  font-size: 80px;
 }
 
 .parentTwo{
   display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: 15%;
+  margin-right: 10%;
+
   
 }
 
 
-.lyricsFour{
-  /* background-color: red; */
-  display:inline;
-  word-spacing: 20px;
-
-}
-
-.lyricsFive{
+.lyricsFour, .lyricsFive{
   /* background-color: red; */
   display: inline;
+  font-family: "baskerville-urw", serif;
+  font-weight: 400;
+  font-style: normal;
   word-spacing: 20px;
+
 }
