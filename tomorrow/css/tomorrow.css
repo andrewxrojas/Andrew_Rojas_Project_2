@@ -49,7 +49,7 @@
   }
 
 
-  .lyricsTwo, .but, .if, .wise, .lyricsThree, .that, .theresAlways, .always, .tomorrow {
+  .lyricsTwo, .but, .if, .weAre, .wise, .we, .know, .that, .theres, .always, .tomorrow {
     /* background-color: red; */
     display: inline;
     font-family: "baskerville-urw", serif;
@@ -68,7 +68,23 @@
 
   }
 
+  .weAre{
+    animation-name: weAre;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+  }
 
+  .wise{
+    animation-name: wise;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+
+  }
 
   .that {
     animation-name: that;
@@ -89,7 +105,7 @@
   }
 
 
-  .lyricsThree {
+  .we {
     animation-name: weKnow;
     animation-delay: none;
     animation-direction: forwards;
@@ -112,15 +128,13 @@
 
   } 
 
+
+  .theres, .always {
+
+  }
   @keyframes but {
-    from{
-      font-size: 2px; 
-      color: white;
-    }
-    to{
-      font-size: 120px;
-      color: #e4b0bc;
-    }
+    0%{opacity:1;}
+    100%{opacity:0;}
   }
 
   @keyframes if {
@@ -128,17 +142,40 @@
     100%{opacity:0;}
   }
 
-  @keyframes weKnow {
+  @keyframes weAre{
     from{
       font-size: 2px; 
       color: white;
     }
     to{
-      font-size: 120px;
-      color: #e4b0bc;
+      font-size: 80px;
+      color: white;
+    } 
+  }
+
+  @keyframes we {
+    from{
+      font-size: 2px; 
+      color: white;
+    }
+    to{
+      font-size: 130px;
+      color: rgb(255, 255, 255);
     }
 
   }
+
+  @keyframes wise {
+    from{
+      font-size: 2px; 
+      color: white;
+    }
+    to{
+      font-size: 130px;
+      color: #af7c88;
+    }
+  }
+
 
   @keyframes that {
     0%{opacity:1;}
@@ -151,7 +188,9 @@
       font-size: 2px;
     }
     to{
-      font-size: 120px;
+      font-size: 125px;
+      color: #f0baca;
+
     }
   } 
 
