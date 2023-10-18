@@ -16,9 +16,6 @@
     /* animation-timing-function: ease-in-out; */
   }
 
-  a:hover{
-    font-size: 150px;
-  }
 
   a:link{
     text-decoration: none;
