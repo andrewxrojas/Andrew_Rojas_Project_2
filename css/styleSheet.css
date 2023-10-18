@@ -13,7 +13,12 @@
     font-style: normal;
     animation: sorrow 1s linear infinite;
     filter: blur(1px);
+    -webkit-filter: blur(1px);
     /* animation-timing-function: ease-in-out; */
+  }
+
+  a:hover{
+    font-size: 130px;
   }
 
 
@@ -58,11 +63,17 @@
 
   .we1, .we2{
     transition-duration: 8s;
+    -webkit-transition-duration: 8s;
     animation-name: we;
     animation-delay: none;
     animation-direction: forwards;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+    -webkit-animation-name: we;
+    -webkit-animation-delay: none;
+    -webkit-animation-direction: forwards;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards;
   }
 
   .lyrics, .lyricsOne{
@@ -71,6 +82,11 @@
     animation-direction: forwards;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+    -webkit-animation-name: allHave;
+    -webkit-animation-delay: none;
+    -webkit-animation-direction: forwards;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards;
   }
 
    .pain{
@@ -79,6 +95,11 @@
     animation-direction: forwards;
     animation-duration: 7s;
     animation-fill-mode: forwards;
+    -webkit-animation-name: painRed;
+    -webkit-animation-delay: none;
+    -webkit-animation-direction: forwards;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-fill-mode: forwards;
     /* animation-iteration-count: 1; */
     /* animation-timing-function: ease-in-out; */
 
@@ -131,57 +152,79 @@
     0%{
       font-weight: normal;
       transform: translate(3px, 0px);
+      -webkit-transform: translate(3px,0px);
       filter: blur(1px);
+      -webkit-filter: blur(1px);
     }
     10%{
         font-weight: lighter;
         transform: translate(0px, 2px);
+        -webkit-transform: translate(0px,2px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     20%{
         font-weight: bold;
         transform: translate(1px, 1px);
+        -webkit-transform: translate(1px,1px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     30%{
         font-weight: normal;
         transform: translate(0px, 0px);
+        -webkit-transform: translate(0px,0px);
         filter: blur(2px);
+        -webkit-filter: blur(2px);
     }
     40%{
         font-weight: bold;
         transform: translate(0px, 2px);
+        -webkit-transform: translate(0px,2px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     50%{
         font-weight: normal;
         transform: translate(2px, 0px);
+        -webkit-transform: translate(2px,0px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     60%{
         font-weight: lighter;
         transform: translate(1px, 1px);
+        -webkit-transform: translate(1px,1px);
         filter: blur(3px);
+        -webkit-filter: blur(3px);
     }
     70%{
         font-weight: bold;
         transform: translate(3px, 1px);
+        -webkit-transform: translate(3px,1px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     80%{
         font-weight: normal;
         transform: translate(0px, 0px);
+        -webkit-transform: translate(0px,0px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     90%{
         font-weight: lighter;
         transform: translate(2px, 1px);
+        -webkit-transform: translate(2px,1px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     100%{
         font-weight: bold;
         transform: translate(2px, 2px);
+        -webkit-transform: translate(2px,2px);
         filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
   }
  
