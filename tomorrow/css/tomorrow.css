@@ -50,12 +50,30 @@
   }
 
 
-  .lyricsTwo, .lyricsThree {
+  .lyricsTwo, .wise, .lyricsThree, .that, .tomorrow {
     /* background-color: red; */
     display: inline;
     font-family: "baskerville-urw", serif;
     font-weight: 400;
     font-style: normal;
     word-spacing: 20px;
+
+  }
+
+  .wise{
+    animation-name: weAreWise;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+  }
+
+  .wise{
+    animation-name: thereIsTomorrow;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 
   }
