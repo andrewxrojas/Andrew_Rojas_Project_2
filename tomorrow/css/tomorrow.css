@@ -8,7 +8,6 @@
 
   a{
     text-decoration: none;
-    text-decoration: none;
     font-family: "timberline", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -76,6 +75,10 @@
     animation-fill-mode: forwards;
   }
 
+  .weAre:hover{
+    text-transform: capitalize;
+  }
+
   .wise{
     animation-name: wise;
     animation-delay: none;
@@ -125,13 +128,10 @@
 
   .tomorrow {
     animation: tomorrow .5s infinite;
-
   } 
 
 
-  .theres, .always {
 
-  }
   @keyframes but {
     0%{opacity:1;}
     100%{opacity:0;}
@@ -171,7 +171,7 @@
       color: white;
     }
     to{
-      font-size: 130px;
+      font-size: 118px;
       color: #af7c88;
     }
   }
@@ -188,7 +188,7 @@
       font-size: 2px;
     }
     to{
-      font-size: 125px;
+      font-size: 118px;
       color: #f0baca;
 
     }

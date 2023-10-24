@@ -8,9 +8,9 @@
   
   a{
     text-decoration: none;
-    font-family: "timberline", sans-serif;
+    /* font-family: "timberline", sans-serif;
     font-weight: 400;
-    font-style: normal;  
+    font-style: normal;   */
     color: white;
   }
   
@@ -36,27 +36,174 @@
     color: white;
     background-color: #333333;
     font-size: 80px;
+    text-align: center;
+    position: relative;
   }
   
   .parentThree{
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 15%;
-    margin-right: 10%;
-  
-    
+    justify-content: space-around;    
   }
-  
-  
-  .carryOn{
+
+  .l, .e, .a, .n {
+
+    display: inline;
+    font-family: "timberline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: -12px;
+  }
+
+  .placeHolder{
+
+    display: inline;
+    font-family: "baskerville-urw", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;  
+
+  } 
+
+  .onMe{
+    display: inline;
+    font-family: "timberline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 20px;
+  }
+
+  .strong, .friend, .help, .carryOn {
     /* background-color: red; */
     display: inline;
     font-family: "baskerville-urw", serif;
     font-weight: 400;
     font-style: normal;
     word-spacing: 20px;
-  
+
+  }
+
+  .l{
+    animation-name: l;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  .e{
+    animation-name: e;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  .a{
+    animation-name: a;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  .n{
+    animation-name: n;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  .onMe{
+    animation-name: onMe;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
   }
   
+  .strong {
+    animation-name: strong;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes l {
+    from {
+      color: white;
+    }
+    to {
+      color: rgb(255, 168, 222);
+    }
+    0%{
+    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
+    }
+  }
+
+  @keyframes e {
+    from {
+      color: white;
+    }
+    to {
+      color: rgb(255, 168, 222);
+    }
+    0%{
+    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
+    }
+  }
+
+  @keyframes a {
+    from {
+      color: white;
+    }
+    to {
+      color: rgb(255, 168, 222);
+    }
+    0%{
+    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
+    }
+  }
+
+  @keyframes n {
+    from {
+      color: white;
+    }
+    to {
+      color: rgb(255, 168, 222);
+    }
+    0%{
+    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
+    }
+  }
+
+  @keyframes onMe {
+    from {
+      color: rgb(255, 168, 222);
+    }
+    to {
+      color: white;
+    }
+    0%{
+    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
+    }
+  }
+
+  @keyframes strong {
+    0%{opacity:1;}
+    100%{opacity:0;}
+  }
+
+
+  /* .carryOn{
+   
+    display: inline;
+    font-family: "baskerville-urw", serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 20px;
+  }
+   */
