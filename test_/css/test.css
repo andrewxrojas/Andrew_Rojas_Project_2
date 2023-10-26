@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    
+  }
+  
+  body {
+    background-color: #333333;
+    color: white;
+    font-size: 80px;
+    font-family: "baskerville-urw", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(255, 204, 236);
+    position: relative;
+    font-family: "timberline", sans-serif;
+    font-weight: 400;
+  }
+  
+  a:hover {
+    opacity: 0.6;
+  }
+  
+  div {
+    text-align: center;
+    
+  }
+  
+  #parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .but, #weAre {
+    display: inline;
+    padding-top: 20%;
+    padding-bottom: 70%;
+  }
+  
+  .but {
+    display: inline-flex;
+    animation-name: but;
+    animation-delay: none;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+
+  .nav2 {
+    display:inline-flex;
+    animation: animation2 4.5s;
+    animation-fill-mode: forwards;
+    animation-duration: forwards;
+    animation-iteration-count: 1;
+  
+  }
+
+  #forDown {
+    animation-name: for;
+    animation-delay: 1s;
+    animation-direction: forwards;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+  
+  }
+  
+  #wise {
+    padding-top: 20%;
+    padding-bottom: 70%;
+    animation-name: long;
+    animation-delay: 1s;
+    animation-direction: forwards;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+  }
+  
+  #needMiddle {
+    color: white;
+    animation-name: needMiddle;
+    animation-delay: 4.6s;
+    animation-direction: forwards;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+  #needMiddle:hover{
+    color: rgb(238, 187, 219);
+  }
+
+
+  #theres, #always {
+    display: inline-flex;
+    animation-name: theres;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  #always {
+    display: inline-flex;
+    padding-top: 20%;
+    padding-bottom: 29%;
+  }
+  
+  .nav4 { 
+    display:inline-flex;
+    animation: animation4 4.5s;
+    animation-delay: 12.5s;
+    animation-fill-mode: forwards;
+    animation-duration: forwards;
+    animation-iteration-count: 1;
+  
+  }
+
+  #tomorrow {
+    animation-name: tomorrow;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-top: -8%;
+  }
+  
+  #tomorrow:hover {
+    color: rgb(199, 97, 162);
+  }
+
+  @keyframes but {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes animation2 {
+    0% {
+      transform: skew(0deg) rotate(0deg);
+      translate: 0px 0px;
+    }
+    25% {
+      translate: -50px 50px;
+    }
+    50% {
+      translate: -75px 100px;
+    }       
+    100% {
+      translate: -250px 300px;
+      transform: skew(-25deg) rotate(360deg) scale(2);
+    }
+  }
+
+  @keyframes for {
+    0% {
+        color: rgb(255, 204, 236);
+    }
+    25%{
+        color: rgb(238, 187, 219);
+    }
+    50%{
+        color: rgb(200, 141, 178);
+    }
+    75% {
+        color: rgb(199, 97, 162);
+    }
+    100% {
+        color: rgb(200, 60, 149);
+    }
+  }
+  
+  @keyframes long {
+    0% {
+      color: rgb(255, 204, 236);
+    }
+    10%{  
+      color: rgb(238, 187, 219);
+    } 
+    15%{
+      color: rgb(238, 187, 219);
+    }       
+    25%{
+      color: rgb(238, 187, 219);
+    }
+    35%{ 
+      color: rgb(200, 141, 178);
+    }    
+    50%{
+      color: rgb(200, 141, 178);
+    }
+    65%{
+      color: rgb(200, 141, 178);
+    }    
+    75% { 
+      color: rgb(199, 97, 162);
+    }
+    85%{
+      color: rgb(199, 97, 162);
+    }
+    95%{
+      color: rgb(199, 97, 162);
+    }        
+    100% {
+      color: rgb(200, 60, 149);
+    }
+  }
+  
+  @keyframes needMiddle {
+    0% {
+      font-size: 80px;
+      opacity: 0;
+    }   
+    50% {
+      font-size: 80px;
+      opacity: 0;
+    }  
+    100% {
+      font-size: 115px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes theres{
+    0%, 25%, 50% { 
+        color: white;
+      }
+    55%,75% {
+        color: rgb(255, 204, 236);
+     }  
+    85% {
+        color: #f0baca;
+      }
+    100% {
+        color: white;
+    }
+  }
+
+  @keyframes animation4 {
+    0% {
+        transform: skew(0deg) rotate(0deg);
+        translate: 0px 0px;
+      }
+    25% {
+        translate: -50px 50px; 
+      }
+    50% {
+        translate: -75px 100px;
+      }   
+    100% {
+        translate: -50px 150px;
+        transform: skew(-25deg) rotate(360deg) scale(1.5);
+      }
+  }
+
+  @keyframes tomorrow {
+    0% {
+        background: #d1a1ac; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(
+          45deg,
+          #d1a1ac,
+          #af7c88 27%,
+          #d1b1b9 53%,
+          #e5d0d6 77%,
+          #edc2ce
+        ); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(
+          45deg,
+          #d1a1ac,
+          #af7c88 27%,
+          #d1b1b9 53%,
+          #e5d0d6 77%,
+          #edc2ce
+        ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(
+          45deg,
+          #d1a1ac,
+          #af7c88 27%,
+          #d1b1b9 53%,
+          #e5d0d6 77%,
+          #edc2ce
+        ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(
+          45deg,
+          #d1a1ac,
+          #af7c88 27%,
+          #d1b1b9 53%,
+          #e5d0d6 77%,
+          #edc2ce
+        ); /* Standard syntax */
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    
+      25% {
+        background: #edc2ce; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(
+          45deg,
+          #edc2ce,
+          #d1a1ac 27%,
+          #af7c88 53%,
+          #d1b1b9 77%,
+          #e5d0d6
+        ); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(
+          45deg,
+          #edc2ce,
+          #d1a1ac 27%,
+          #af7c88 53%,
+          #d1b1b9 77%,
+          #e5d0d6
+        ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(
+          45deg,
+          #edc2ce,
+          #d1a1ac 27%,
+          #af7c88 53%,
+          #d1b1b9 77%,
+          #e5d0d6
+        ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(
+          45deg,
+          #edc2ce,
+          #d1a1ac 27%,
+          #af7c88 53%,
+          #d1b1b9 77%,
+          #e5d0d6
+        ); /* Standard syntax */
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    
+      50% {
+        background: #e5d0d6; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(
+          45deg,
+          #e5d0d6,
+          #edc2ce 27%,
+          #d1a1ac 53%,
+          #af7c88 77%,
+          #d1b1b9
+        ); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(
+          45deg,
+          #e5d0d6,
+          #edc2ce 27%,
+          #d1a1ac 53%,
+          #af7c88 77%,
+          #d1b1b9
+        ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(
+          45deg,
+          #e5d0d6,
+          #edc2ce 27%,
+          #d1a1ac 53%,
+          #af7c88 77%,
+          #d1b1b9
+        ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(
+          45deg,
+          #e5d0d6,
+          #edc2ce 27%,
+          #d1a1ac 53%,
+          #af7c88 77%,
+          #d1b1b9
+        ); /* Standard syntax */
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    
+      75% {
+        background: #d1b1b9; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(
+          45deg,
+          #d1b1b9,
+          #e5d0d6 27%,
+          #edc2ce 53%,
+          #d1a1ac 77%,
+          #af7c88
+        ); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(
+          45deg,
+          #d1b1b9,
+          #e5d0d6 27%,
+          #edc2ce 53%,
+          #d1a1ac 77%,
+          #af7c88
+        ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(
+          45deg,
+          #d1b1b9,
+          #e5d0d6 27%,
+          #edc2ce 53%,
+          #d1a1ac 77%,
+          #af7c88
+        ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(
+          45deg,
+          #d1b1b9,
+          #e5d0d6 27%,
+          #edc2ce 53%,
+          #d1a1ac 77%,
+          #af7c88
+        ); /* Standard syntax */
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    
+      100% {
+        background: #af7c88; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(
+          45deg,
+          #af7c88,
+          #d1b1b9 27%,
+          #e5d0d6 53%,
+          #edc2ce 77%,
+          #d1a1ac
+        ); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(
+          45deg,
+          #af7c88,
+          #d1b1b9 27%,
+          #e5d0d6 53%,
+          #edc2ce 77%,
+          #d1a1ac
+        ); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(
+          45deg,
+          #af7c88,
+          #d1b1b9 27%,
+          #e5d0d6 53%,
+          #edc2ce 77%,
+          #d1a1ac
+        ); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(
+          45deg,
+          #af7c88,
+          #d1b1b9 27%,
+          #e5d0d6 53%,
+          #edc2ce 77%,
+          #d1a1ac
+        ); /* Standard syntax */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    
+  
+  
+  

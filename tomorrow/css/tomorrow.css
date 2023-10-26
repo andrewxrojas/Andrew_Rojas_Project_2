@@ -1,209 +1,271 @@
-/* * {
-    margin-top: 5%;
-    padding: 0;
-    max-height: 100vh;
-    width: 130%;
-    box-sizing: border-box;
-  } */
-
-  * {
-    margin-top: 8%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-
-  a{
-    text-decoration: none;
-    font-family: "timberline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  a:link{
-    text-decoration: none;
-  }
-
-  a:visited{
-    text-decoration: none;
-  }
-
-  a:hover{
-    color: red;
-    
-  }
-
-  a:active{
-    text-decoration: none;
-  }
-
-  body {
-    color: white;
-    background-color: #333333;
-    text-align: center;
-    position: relative;
-  }
+*{
+  margin: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   
-  .parentOne {
-    display: inline; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin-left: 35%;
-    margin-right: 10%;     */
-    margin-right: 10%
+}
+
+body {
+  background-color: #333333;
+  color: white;
+  font-size: 80px;
+  font-family: "baskerville-urw", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 204, 236);
+  position: relative;
+  font-family: "timberline", sans-serif;
+  font-weight: 400;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+div {
+  text-align: center;
+  
+}
+
+#parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.but, #weAre {
+  display: inline;
+  padding-top: 20%;
+  padding-bottom: 70%;
+}
+
+.but {
+  display: inline-flex;
+  animation-name: but;
+  animation-delay: none;
+  animation-direction: forwards;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+.nav2 {
+  display:inline-flex;
+  animation: animation2 4.5s;
+  animation-fill-mode: forwards;
+  animation-duration: forwards;
+  animation-iteration-count: 1;
+
+}
+
+#forDown {
+  animation-name: for;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+
+}
+
+#wise {
+  padding-top: 20%;
+  padding-bottom: 70%;
+  animation-name: long;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+#needMiddle {
+  color: white;
+  animation-name: needMiddle;
+  animation-delay: 4.6s;
+  animation-direction: forwards;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#needMiddle:hover{
+  color: rgb(238, 187, 219);
+}
+
+
+#theres, #always {
+  display: inline-flex;
+  animation-name: theres;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: forwards;
+  animation-fill-mode: forwards;
+}
+
+#always {
+  display: inline-flex;
+  padding-top: 20%;
+  padding-bottom: 29%;
+}
+
+.nav4 { 
+  display:inline-flex;
+  animation: animation4 4.5s;
+  animation-delay: 12.5s;
+  animation-fill-mode: forwards;
+  animation-duration: forwards;
+  animation-iteration-count: 1;
+
+}
+
+#tomorrow {
+  animation-name: tomorrow;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: -8%;
+}
+
+#tomorrow:hover {
+  color: rgb(199, 97, 162);
+}
+
+@keyframes but {
+  0% {
+      opacity: 1;
   }
+  100% {
+      opacity: 0;
+  }
+}
 
+@keyframes animation2 {
+  0% {
+    transform: skew(0deg) rotate(0deg);
+    translate: 0px 0px;
+  }
+  25% {
+    translate: -50px 50px;
+  }
+  50% {
+    translate: -75px 100px;
+  }       
+  100% {
+    translate: -250px 300px;
+    transform: skew(-25deg) rotate(360deg) scale(2);
+  }
+}
 
-  .lyricsTwo, .but, .if, .weAre, .wise, .we, .know, .that, .theres, .always, .tomorrow {
-    /* background-color: red; */
-    display: inline;
-    font-family: "baskerville-urw", serif;
-    font-weight: 400;
-    font-style: normal;
-    word-spacing: 20px;
+@keyframes for {
+  0% {
+      color: rgb(255, 204, 236);
+  }
+  25%{
+      color: rgb(238, 187, 219);
+  }
+  50%{
+      color: rgb(200, 141, 178);
+  }
+  75% {
+      color: rgb(199, 97, 162);
+  }
+  100% {
+      color: rgb(200, 60, 149);
+  }
+}
+
+@keyframes long {
+  0% {
+    color: rgb(255, 204, 236);
+  }
+  10%{  
+    color: rgb(238, 187, 219);
+  } 
+  15%{
+    color: rgb(238, 187, 219);
+  }       
+  25%{
+    color: rgb(238, 187, 219);
+  }
+  35%{ 
+    color: rgb(200, 141, 178);
+  }    
+  50%{
+    color: rgb(200, 141, 178);
+  }
+  65%{
+    color: rgb(200, 141, 178);
+  }    
+  75% { 
+    color: rgb(199, 97, 162);
+  }
+  85%{
+    color: rgb(199, 97, 162);
+  }
+  95%{
+    color: rgb(199, 97, 162);
+  }        
+  100% {
+    color: rgb(200, 60, 149);
+  }
+}
+
+@keyframes needMiddle {
+  0% {
     font-size: 80px;
+    opacity: 0;
+  }   
+  50% {
+    font-size: 80px;
+    opacity: 0;
+  }  
+  100% {
+    font-size: 115px;
+    opacity: 1;
   }
+}
 
-  .that, .theres, .always, .tomorrow {
-    display: inline;
-  }
-
-  .if {
-    animation-name: if;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-
-  }
-
-  .weAre{
-    animation-name: weAre;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-  }
-
-
-  .wise{
-    animation-name: wise;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-
-
-  }
-
-  .that {
-    animation-name: that;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 6s;
-    animation-fill-mode: forwards;
-
-  }
-
-   .but {
-    animation-name: but;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-
-  }
-
-
-  .we {
-    animation-name: weKnow;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-
-  }
-
-  .always {
-    animation-name: always;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-
-  }
-
-  .tomorrow {
-    animation: tomorrow .5s infinite;
-  } 
-
-
-
-  @keyframes but {
-    0%{opacity:1;}
-    100%{opacity:0;}
-  }
-
-  @keyframes if {
-    0%{opacity:1;}
-    100%{opacity:0;}
-  }
-
-  /* @keyframes weAre{
-    from{
-      font-size: 2px; 
+@keyframes theres{
+  0%, 25%, 50% { 
       color: white;
     }
-    to{
-      font-size: 80px;
-      color: white;
-    } 
-  } */
-
-  @keyframes we {
-    from{
-      font-size: 2px; 
-      color: white;
-    }
-    to{
-      font-size: 80px;
-      color: rgb(255, 255, 255);
-    }
-
-  }
-
-  @keyframes wise {
-    from{
-      font-size: 2px; 
-      color: white;
-    }
-    to{
-      font-size: 80px;
-      color: #af7c88;
-    }
-  }
-
-
-  @keyframes that {
-    0%{opacity:1;}
-    100%{opacity:0;}
-  }
-
-   
-  @keyframes always{
-    from{ 
-      font-size: 2px;
-    }
-    to{
-      font-size: 80px;
+  55%,75% {
+      color: rgb(255, 204, 236);
+   }  
+  85% {
       color: #f0baca;
-
     }
-  } 
+  100% {
+      color: white;
+  }
+}
 
+@keyframes animation4 {
+  0% {
+      transform: skew(0deg) rotate(0deg);
+      translate: 0px 0px;
+    }
+  25% {
+      translate: -50px 50px; 
+    }
+  50% {
+      translate: -75px 100px;
+    }   
+  100% {
+      translate: -50px 150px;
+      transform: skew(-25deg) rotate(360deg) scale(1.5);
+    }
+}
 
-  @keyframes tomorrow {
-    0% {
+@keyframes tomorrow {
+  0% {
       background: #d1a1ac; /* For browsers that do not support gradients */
       background: -webkit-linear-gradient(
         45deg,
@@ -398,4 +460,5 @@
     }
   }
   
+
 
