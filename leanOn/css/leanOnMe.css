@@ -1,61 +1,220 @@
-* {
-  margin-top: 5%;
-  padding: 0;
-  max-height: 100vh;
-  width: 130%;
-  box-sizing: border-box;
-}
-
-a{
-  text-decoration: none;
-  font-family: "timberline", sans-serif;
-  font-weight: 400;
-  font-style: normal;  
-  color: white;
-}
-
-a:link{
-  text-decoration: none;
-}
-
-a:visited{
-  text-decoration: none;
-}
-
-a:hover{
-  color: rgb(255, 168, 222);
-}
-
-a:active{
-  text-decoration: none;
+*{
+  margin: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  
 }
 
 body {
-  min-height: 100vh;
-  width: 100%;
-  color: white;
   background-color: #333333;
+  color: white;
   font-size: 80px;
+  font-family: "baskerville-urw", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.parentTwo{
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 15%;
-  margin-right: 10%;
+a {
+  text-decoration: none;
+  color: rgb(255, 204, 236);
+  position: relative;
+  font-family: "timberline", sans-serif;
+  font-weight: 400;
+}
 
+a:hover {
+  opacity: 0.6;
+}
+
+div {
+  text-align: center;
   
 }
 
 
-.lyricsFour, .lyricsFive{
-  /* background-color: red; */
-  display: inline;
-  font-family: "baskerville-urw", serif;
-  font-weight: 400;
-  font-style: normal;
-  word-spacing: 20px;
+#parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+
+#for {
+  display: inline;
+  padding-top: 20%;
+  padding-bottom: 70%;
+}
+
+
+
+#forDown {
+  animation-name: for;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+
+}
+
+.nav {
+  display:inline-flex;
+  animation: animation 4.5s;
+  animation-fill-mode: forwards;
+  animation-duration: forwards;
+  animation-iteration-count: 1;
+
+}
+
+#long {
+  padding-top: 20%;
+  padding-bottom: 70%;
+  animation-name: long;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+#needMiddle {
+  color: white;
+  animation-name: needMiddle;
+  animation-delay: 4.6s;
+  animation-direction: forwards;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#needMiddle:hover{
+  color: rgb(238, 187, 219);
+}
+
+#leanOn {
+  padding-top: 20%;
+  padding-bottom: 29%;
+
+}
+
+#lyrics {
+  animation-name: lyrics;
+  animation-delay: 10s;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#lyrics:hover {
+  color: rgb(199, 97, 162);
+}
+
+@keyframes for {
+  0% {
+      color: rgb(255, 204, 236);
+  }
+  25%{
+      color: rgb(238, 187, 219);
+  }
+  50%{
+      color: rgb(200, 141, 178);
+  }
+  75% {
+      color: rgb(199, 97, 162);
+  }
+  100% {
+      color: rgb(200, 60, 149);
+
+  }
+}
+
+  
+@keyframes animation {
+  0% {
+      transform: skew(0deg) rotate(0deg);
+      translate: 0px 0px;
+  }
+
+  25% {
+      translate: -50px 50px;
+
+      }
+
+  50% {
+      translate: -75px 100px;
+  }   
+      
+  100% {
+      translate: -250px 300px;
+      transform: skew(-25deg) rotate(360deg) scale(2);
+  }
+}
+
+@keyframes long {
+  0% {
+      color: rgb(255, 204, 236);
+  }
+  10%{  
+      color: rgb(238, 187, 219);
+  } 
+  15%{
+      color: rgb(238, 187, 219);
+  }       
+  25%{
+      color: rgb(238, 187, 219);
+  }
+  35%{ 
+      color: rgb(200, 141, 178);
+  }    
+  50%{
+      color: rgb(200, 141, 178);
+  }
+  65%{
+      color: rgb(200, 141, 178);
+  }    
+  75% { 
+      color: rgb(199, 97, 162);
+  }
+  85%{
+      color: rgb(199, 97, 162);
+  }
+  95%{
+      color: rgb(199, 97, 162);
+  }        
+  100% {
+      color: rgb(200, 60, 149);
+  }
+}
+
+@keyframes needMiddle {
+  0% {
+      font-size: 80px;
+      opacity: 0;
+  }   
+  50% {
+      font-size: 80px;
+      opacity: 0;
+  }  
+  100% {
+      font-size: 115px;
+      opacity: 1;
+  }
+}
+
+@keyframes lyrics {
+  0% {
+      color: #FAFCD9;
+      text-shadow: none;
+  }
+  50% {
+      color: rgb(255, 204, 236);
+      text-shadow: 0px 0px 10px;
+  }
+  100% {
+      color: rgb(255, 168, 222);
+      text-shadow: none;
+  }
 }

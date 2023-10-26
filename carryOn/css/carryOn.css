@@ -1,224 +1,228 @@
-* {
-    margin-top: 5%;
-    padding: 0;
-    max-height: 100vh;
-    width: 130%;
-    box-sizing: border-box;
-  }
+*{
+  margin: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   
-  a{
-    text-decoration: none;
-    /* font-family: "timberline", sans-serif;
-    font-weight: 400;
-    font-style: normal;   */
-    color: white;
-  }
+}
+
+body {
+  background-color: #333333;
+  color: white;
+  font-size: 80px;
+  font-family: "baskerville-urw", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 204, 236);
+  position: relative;
+  font-family: "timberline", sans-serif;
+  font-weight: 400;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+div {
+  text-align: center;
   
-  a:link{
-    text-decoration: none;
-  }
-  
-  a:visited{
-    text-decoration: none;
-  }
-  
-  a:hover{
-    color: rgb(255, 168, 222);
-  }
-  
-  a:active{
-    text-decoration: none;
-  }
-  
-  body {
-    min-height: 100vh;
-    width: 100%;
-    color: white;
-    background-color: #333333;
-    font-size: 80px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .parentThree{
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;    
+}
+
+#parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lean {
+  display:inline-flex;
+  animation: lean 5s;
+  animation-fill-mode: forwards;
+  animation-duration: forwards;
+  animation-iteration-count: 1;
+  margin-top: 30%;
+  margin-left: 5%;
+}
+
+#onMe {
+  display: inline;
+  padding-top: 20%;
+  padding-bottom: 70%;
+}
+
+#leanDown {
+  animation-name: strong;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+.nav {
+  display:inline-flex;
+  animation: animation 4.5s;
+  animation-fill-mode: forwards;
+  animation-duration: forwards;
+  animation-iteration-count: 1;
+
+}
+
+#friend {
+  padding-top: 20%;
+  padding-bottom: 70%;
+  animation-name: friend;
+  animation-delay: 1s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+#friendMiddle {
+  color: white;
+  animation-name: friendMiddle;
+  animation-delay: 4.5s;
+  animation-direction: forwards;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+#friendMiddle:hover{
+  color: rgb(238, 187, 219);
+}
+
+#carryOn {
+  padding-top: 20%;
+  padding-bottom: 29%;
+
+}
+
+#nextPG {
+  animation-name: next;
+  animation-delay: 10s;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#nextPg:hover {
+  color: rgb(199, 97, 162);
+}
+
+@keyframes lean {
+  0% {
+    transform: skew(0deg);
   }
 
-  .l, .e, .a, .n {
-
-    display: inline;
-    font-family: "timberline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    word-spacing: -12px;
+  100% {
+      transform: skew(-40deg);
   }
+}
 
-  .placeHolder{
+@keyframes strong {
+  0% {
+      /* font-size: 80px; */
+      color: rgb(255, 204, 236);
+  }
+  25%{
+      /* font-size: 85px; */
+      color: rgb(238, 187, 219);
+  }
+  50%{
+      /* font-size: 100px; */
+      color: rgb(200, 141, 178);
+  }
+  75% {
+      /* font-size: 140px; */
+      color: rgb(199, 97, 162);
+  }
+  100% {
+      /* font-size: 140px; */
+      color: rgb(200, 60, 149);
+  }
+}
 
-    display: inline;
-    font-family: "baskerville-urw", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #333333;  
+@keyframes animation {
+  0% {
+      translate: 0px 0px;
+  }
+      
+  100% {
+      translate: -450px 80px;
+      transform: scale(2);
+  }
+}
 
+@keyframes friend {
+  0% {
+      color: rgb(255, 204, 236);
+  }
+  10%{  
+      color: rgb(238, 187, 219);
   } 
-
-  .onMe{
-    display: inline;
-    font-family: "timberline", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    word-spacing: 20px;
+  15%{
+      color: rgb(238, 187, 219);
+  }       
+  25%{
+      color: rgb(238, 187, 219);
   }
-
-  .strong, .friend, .help, .carryOn {
-    /* background-color: red; */
-    display: inline;
-    font-family: "baskerville-urw", serif;
-    font-weight: 400;
-    font-style: normal;
-    word-spacing: 20px;
-
+  35%{ 
+      color: rgb(200, 141, 178);
+  }    
+  50%{
+      color: rgb(200, 141, 178);
   }
-  
-  .carryOn{
-    color: #FECEA8;
-    text-align: center;
-    animation: blinker 10s linear infinite;
-    text-shadow: 0px 0px 21px #E84A5F;
-    transition: 1s ease;
+  65%{
+      color: rgb(200, 141, 178);
+  }    
+  75% { 
+      color: rgb(199, 97, 162);
   }
-
-
-  .l{
-    animation-name: l;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  85%{
+      color: rgb(199, 97, 162);
   }
-
-  .e{
-    animation-name: e;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  95%{
+      color: rgb(199, 97, 162);
+  }        
+  100% {
+      color: rgb(200, 60, 149);
   }
+}
 
-  .a{
-    animation-name: a;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+@keyframes friendMiddle {
+  0% {
+      font-size: 80px;
+      opacity: 0;
+  }   
+  50% {
+      font-size: 80px;
+      opacity: 0;
+  }  
+  100% {
+      font-size: 115px;
+      opacity: 1;
   }
+}
 
-  .n{
-    animation-name: n;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+@keyframes next {
+  0% {
+      color: #FAFCD9;
+      text-shadow: none;
   }
-
-  .onMe{
-    animation-name: onMe;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+  50% {
+      color: rgb(255, 204, 236);
+      text-shadow: 0px 0px 10px;
   }
-  
-  .strong {
-    animation-name: strong;
-    animation-delay: none;
-    animation-direction: forwards;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes l {
-    from {
-      color: white;
-    }
-    to {
+  100% {
       color: rgb(255, 168, 222);
-    }
-    0%{
-    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
-    }
+      text-shadow: none;
   }
-
-  @keyframes e {
-    from {
-      color: white;
-    }
-    to {
-      color: rgb(255, 168, 222);
-    }
-    0%{
-    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
-    }
-  }
-
-  @keyframes a {
-    from {
-      color: white;
-    }
-    to {
-      color: rgb(255, 168, 222);
-    }
-    0%{
-    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
-    }
-  }
-
-  @keyframes n {
-    from {
-      color: white;
-    }
-    to {
-      color: rgb(255, 168, 222);
-    }
-    0%{
-    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
-    }
-  }
-
-  @keyframes onMe {
-    from {
-      color: rgb(255, 168, 222);
-    }
-    to {
-      color: white;
-    }
-    0%{
-    transform: skew(60deg); /*I was inspired to use skew to create "movement" as it arrives to its location*/
-    }
-  }
-
-  @keyframes strong {
-    0%{opacity:1;}
-    100%{opacity:0;}
-  }
-
-  @keyframes blinker {
-    50% {
-      opacity: 0.8;
-      color: white;
-    }
-  }
-
-  /* .carryOn{
-   
-    display: inline;
-    font-family: "baskerville-urw", serif;
-    font-weight: 400;
-    font-style: normal;
-    word-spacing: 20px;
-  }
-   */
+}

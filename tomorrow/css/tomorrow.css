@@ -1,9 +1,15 @@
-* {
+/* * {
     margin-top: 5%;
     padding: 0;
     max-height: 100vh;
     width: 130%;
     box-sizing: border-box;
+  } */
+
+  * {
+    margin-top: 8%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
 
   a{
@@ -22,8 +28,8 @@
   }
 
   a:hover{
-    color: rgb(255, 168, 222);
-    font-size: 120px;
+    color: red;
+    
   }
 
   a:active{
@@ -31,20 +37,20 @@
   }
 
   body {
-    min-height: 100vh;
-    width: 100%;
     color: white;
     background-color: #333333;
-    font-size: 80px;
     text-align: center;
     position: relative;
   }
   
   .parentOne {
-    display: flex; 
+    display: inline; 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    /* margin-left: 35%;
+    margin-right: 10%;     */
+    margin-right: 10%
   }
 
 
@@ -55,7 +61,11 @@
     font-weight: 400;
     font-style: normal;
     word-spacing: 20px;
+    font-size: 80px;
+  }
 
+  .that, .theres, .always, .tomorrow {
+    display: inline;
   }
 
   .if {
@@ -75,9 +85,6 @@
     animation-fill-mode: forwards;
   }
 
-  .weAre:hover{
-    text-transform: capitalize;
-  }
 
   .wise{
     animation-name: wise;
@@ -142,7 +149,7 @@
     100%{opacity:0;}
   }
 
-  @keyframes weAre{
+  /* @keyframes weAre{
     from{
       font-size: 2px; 
       color: white;
@@ -151,7 +158,7 @@
       font-size: 80px;
       color: white;
     } 
-  }
+  } */
 
   @keyframes we {
     from{
@@ -159,7 +166,7 @@
       color: white;
     }
     to{
-      font-size: 130px;
+      font-size: 80px;
       color: rgb(255, 255, 255);
     }
 
@@ -171,7 +178,7 @@
       color: white;
     }
     to{
-      font-size: 118px;
+      font-size: 80px;
       color: #af7c88;
     }
   }
@@ -188,7 +195,7 @@
       font-size: 2px;
     }
     to{
-      font-size: 118px;
+      font-size: 80px;
       color: #f0baca;
 
     }
